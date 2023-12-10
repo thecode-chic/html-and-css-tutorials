@@ -1,0 +1,101 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+/* emoji container */
+.emoji {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f9c70b; /* Skin color */
+    overflow: hidden;
+  }
+  
+  /* Hair */
+  .hair {
+    width: 200px;
+    height: 100px;
+    background-color: #333; /* Hair color */
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50px;
+    z-index: 1;
+  }
+  
+  /* Face */
+  .face {
+    width: 240px;
+    height: 260px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    overflow: hidden;
+  }
+  
+  /* Eyes */
+  .eye {
+    width: 30px;
+    height: 50px;
+    background-color: #fff; /* Eye color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+  }
+  
+  .left-eye {
+    left: 50px;
+  }
+  
+  .right-eye {
+    right: 50px;
+  }
+  
+  /* Eyebrows */
+  .eyebrow {
+    width: 40px;
+    height: 10px;
+    background-color: #333; /* Eyebrow color */
+    position: absolute;
+    top: 35px;
+  }
+  
+  .left-eyebrow {
+    left: 40px;
+    transform: rotate(15deg);
+  }
+  
+  .right-eyebrow {
+    right: 40px;
+    transform: rotate(-15deg);
+  }
+  
+  /* Nose */
+  .nose {
+    width: 20px;
+    height: 20px;
+    background-color: #333; /* Nose color */
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    border-radius: 50%;
+  }
+  
+  /* Mouth */
+  .mouth {
+    width: 60px;
+    height: 20px;
+    background-color: #333; /* Mouth color */
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    border-radius: 50%;
+  }
+  
