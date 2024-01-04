@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merry Christmas Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #4c8bf5, #99c7ff); /* Christmas colors */
+    }
+    #animation-container {
+      position: relative;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+    #santa {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px; /* Adjust size accordingly */
+      display: none; /* Initially hidden */
+    }
+    .firework {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: yellow;
+      border-radius: 50%;
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="animation-container">
+    <h1>MERRY CHRISTMAS</h1>
+    <img id="santa" src="santa.png" alt="Santa Claus">
+  </div>
+
+  <script>
+    function createFireworks() {
+      const container = document.getElementById('animation-container');
+
+      function launchFirework() {
+        const firework = document.createElement('div');
+        firework.classList.add('firework');
+        container.appendChild(firework);
+
+        const xPos = Math.random() * window.innerWidth;
+        const yPos = Math.random() * window.innerHeight;
+        const animationDuration = Math.random() * 1 + 1; // Random duration between 1 to 2 seconds
+
+        firework.style.left = `${xPos}px`;
+        firework.style.top = `${yPos}px`;
+
+        setTimeout(() => {
+          firework.style.opacity = '1';
+          firework.style.transform = 'scale(5)';
+        }, 10);
+
+        setTimeout(() => {
+          firework.remove();
+        }, animationDuration * 1000);
+      }
+
+      setInterval(launchFirework, 100); // Launch fireworks every 800ms
+    }
+
+    window.onload = function() {
+      const santa = document.getElementById('santa');
+      santa.style.display = 'block'; // Display Santa Claus after the page loads
+      createFireworks();
+    };
+  </script>
+</body>
+</html>
