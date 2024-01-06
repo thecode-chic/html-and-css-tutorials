@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunflower in CSS</title>
+    <style>
+        .sunflower {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(circle at 50% 0, #FFD700, transparent 70%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.sunflower:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #8B4513;
+  border-radius: 50%;
+  top: 35%;
+  left: 35%;
+}
+
+.sunflower:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #8B4513;
+  border-radius: 50%;
+  top: 35%;
+  left: 65%;
+}
+
+.sunflower:before,
+.sunflower:after {
+  animation: rotatePetals 4s linear infinite;
+}
+
+@keyframes rotatePetals {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="sunflower"></div>
+</body>
+</html>
