@@ -1,0 +1,78 @@
+/* Styles for the doll */
+.doll {
+    width: 200px;
+    height: 400px;
+    position: relative;
+  }
+  
+  /* Styles for the head */
+  .head {
+    width: 100px;
+    height: 100px;
+    background-color: #fdd;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  
+  /* Styles for the eyes */
+  .eyes {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  
+  /* Styles for the mouth */
+  .mouth {
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Styles for the body */
+  .body {
+    width: 150px;
+    height: 200px;
+    background-color: #f9c;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+  }
+  
+  /* Styles for the dress */
+  .dress {
+    width: 150px;
+    height: 150px;
+    background-color: #ff0;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  /* Styles for the legs */
+  .legs {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Styles for the left leg */
+  .left-leg,
+  .right-leg {
+    width: 30px;
+    height: 100px;
+    background-color: #fdd;
+    border-radius: 10px;
+  }
+  
