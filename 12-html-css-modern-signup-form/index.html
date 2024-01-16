@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+body {
+ box-sizing: border-box;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-image: url('./bg-1.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ font-family: 'Jost', sans-serif;
+
+}
+
+.signup-form {
+ width: 400px;
+ margin: 0 auto;
+ padding: 30px;
+ background-color: rgba(255, 255, 255, 0.8);
+ box-sizing: border-box;
+ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.signup-form h2 {
+    font-size: 30px;
+    color: #6a1b9a;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+ width: 100%;
+ padding: 10px;
+ margin: 10px 0;
+ border: 1px solid #6a1b9a;
+ box-sizing: border-box;
+}
+
+.signup-form input[type="submit"] {
+ width: 100%;
+ padding: 10px;
+ margin-top: 20px;
+ background-color: #6a1b9a;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+
+.signup-form input[type="submit"]:hover {
+ background-color: #581582;
+}
+
+.signup-form a {
+ color: #6a1b9a;
+ text-decoration: none;
+}
+
+.signup-form a:hover {
+ text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+ .signup-form {
+ width: 100%;
+ }
+}
+</style>
+</head>
+<body>
+
+<div class="signup-form">
+    <h2>Sign Up</h2>
+    <p>Fill in the form below to create your account.</p>
+ <form action="" method="">
+    <input type="text" name="fullname" placeholder="Your Full Name" required>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <input type="submit" value="Sign Up">
+    <p>Already have an account? <a href="#">Login here</a></p>
+ </form>
+ 
+</div>
+
+</body>
+</html>
